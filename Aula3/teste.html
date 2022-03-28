@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+            *{
+                text-decoration: none;
+            }
+
+            body{
+                text-align: center;
+            }
+
+            a{
+                color: inherit;
+                
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+
+                display: block;
+                margin: auto;
+
+                line-height: 100px;
+                text-transform: uppercase;
+                font-weight: bold;
+
+                border-radius: 50%;
+                border: 3px solid salmon;
+            }
+
+            a:hover{
+                background-color: rgb(238, 175, 186);
+            }
+
+            a:active{
+                background-color: rgb(233, 155, 168);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Título</h1>
+
+        <a href="#" id="botao">BOTAO</a>
+
+        <script>
+            var but = document.getElementById('botao');
+
+            but.addEventListener('mouseenter',entrar);
+
+            but.addEventListener('mouseout', sair);
+
+            but.addEventListener('click', clicar)
+            function entrar(){
+                but.innerText = 'Entrou!';
+            }
+
+            function sair(){
+                but.innerText = 'Saiu!';
+            }
+
+            function clicar(){
+                but.innerText = 'Clicou!';
+            }
+        </script>
+    </body>
+</html>

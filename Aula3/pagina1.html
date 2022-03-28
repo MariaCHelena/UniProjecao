@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Aula3</title>
+
+        <style>
+            :root{
+                --cinza: #747c89;
+	            --cinza2: #929292;
+                --branco: #fffafa;
+                --azul-clarissimo: #e3e9f0;
+                --marrom-claro: #3c3935;
+                --marrom-escuro: #161616;
+            }
+            body{
+                font-size: 18px;
+                text-align: center;
+
+                margin: 0 40px 20px;
+
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            img{
+                width: 50%;
+                height: 50vh;
+                object-fit: cover;
+            }
+
+            .imagens{
+                display: flex;
+            }
+
+            .cabecalho{
+                background-color: var(--marrom-claro);
+                color: white;
+                padding: 0.5px;
+                margin-bottom: 10px;
+            }
+
+            .conteudo{
+                margin: 20px 40px;
+            }
+
+            form{
+                margin-top: 40px;
+            }
+
+            #nome{
+                box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+                padding: 13px;
+                background-color: var(--azul-clarissimo);
+                border: solid 1px var(--cinza);
+                border-radius: 5px;
+                font-size: 17px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="cabecalho">
+            <h1>Aula 3</h1>
+        </div>
+        <section class="conteudo">
+            <p align="left">Bom dia! Estou aprendendo HTML.
+                HTML formata páginas.
+            </p>
+            <p align="right">O parágrafo é a base do texto editável</p>
+            <p align="justify">COBOL (sigla de COmmon Business Oriented Language) - Linguagem Comum Orientada para os Negócios é uma linguagem de programação orientada para o processamento de banco de dados comerciais.</p>
+            <p align="center">O DB2 é um Sistema de Gestão de Banco de Dados Relacionais (SGDBR) produzido pela IBM. Existem diferentes versões do DB2 que rodam desde num simples PDA|computador de mão, até em potentes mainframes e funcionam em servidores baseados em sistemas Unix, Windows, ou Linux.</p>
+            <p align="right">Algoritmo é simplesmente uma "receita" para executarmos uma tarefa ou resolver algum problema. E como toda receita, um algoritmo também deve ser finito. Se seguirmos uma receita de bolo corretamente, conseguiremos fazer o bolo.</p><br>
+        </section>
+        <div class="imagens">
+            <img src="img/pexels-photo-1805164.jpeg" alt="imagem exemplo">
+            <img src="img/pexels-photo-11542210.jpeg" alt="imagem exemplo">
+        </div>
+        <form action="">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="seu nome">
+        </form>
+    </body>
+</html>
