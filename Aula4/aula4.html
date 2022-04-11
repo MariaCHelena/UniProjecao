@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula04</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            .botao{
+                padding: 8px 15px;
+                background-color: blueviolet;
+                color: white;
+                font-family: arial;
+                display: inline-block;
+                
+                transition: 0.3s;
+                margin-bottom: 20px;
+            }
+
+            .botao:hover{
+                background-color: rgb(95, 41, 145);
+                border-radius: 10px;
+
+                cursor: pointer;
+            }
+
+            #sequencia{
+                display: block;
+                margin: auto;
+
+                width: 500px;
+                min-height: 100px;
+
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+
+            #number{
+                width: 45px;
+                height: 20px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Fibonacci</h1>
+        <input type="number" value="number" id="number">
+        <br>
+        <span class="botao" onclick="mostrar()">Clique para mostrar a sequência</span>
+        <div id="sequencia">
+        </div>
+
+        <script>
+            function mostrar(){
+                var local = window.document.getElementById('sequencia');
+                var inp = window.document.getElementById('number');
+                numero = Number(inp.value);
+
+                var i = 3;
+
+                var a = 0;
+                var b = 1;
+                var c = 0;
+                sequencia.innerHTML = a;
+                sequencia.innerHTML += b;
+                if (numero <= 1){
+                    sequencia.innerHTML = '<b>[ERRO] digite um número maior que 1</b:';
+                    sequencia.style.color = 'red';
+                } else {
+                    for (i; i <= numero; i++){
+                        sequencia.style.color = 'black';
+                        c = a + b;
+                        a = b;
+                        b = c;
+                        sequencia.innerHTML += b;
+                    }
+                }
+                
+            }
+        </script>
+    </body>
+</html>
