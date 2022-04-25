@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fibonacci</title>
+
+        <style>
+            a{
+                background-color: brown;
+                color: white;
+                padding: 5px 15px;
+                border-radius: 10px;
+                display: inline-block;
+            }
+            
+            a:hover{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" name="texto" id="texto">
+        <a id="botao">Butam</a>
+        <script>
+            const Fibonacci = [0, 1]
+            var cont = 0;
+            var btn = document.getElementById('botao')
+            btn.addEventListener('click', acao())
+
+            function acao(){
+                console.log('a')
+            }
+
+            for (let i = 2; i <= 10; i++) {
+                Fibonacci[i] = Fibonacci[i-1] + Fibonacci[i-2]
+                console.log(Fibonacci[i])
+            }
+        </script>
+    </body>
+</html>
