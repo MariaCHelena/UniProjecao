@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste - Maria Helena Carvalho</title>
+
+    <style>
+        body{
+            max-width: 700px;
+            margin: auto;
+        }
+        tbody td{
+            background-color: blue;
+            border: 1px solid black;
+        }
+
+        thead{
+            font-weight: bold;
+        }
+
+        thead td:nth-child(1){
+            background-color: red;
+        }
+
+        thead td:nth-child(2){
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Informações do aluno</legend>
+        <form method="post" action="">
+            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome"><br><br>
+            <input type="number" name="numero" placeholder="Nº de pessoas no grupo"><br><br>
+            <input type="email" name="email" id="email" placeholder="Digite o seu email"><br><br>
+            <label for="data">Data de Nascimento</label><br>
+            <input type="date" name="data" id="data"><br><br>
+            <label for="senha">Digite uma senha para acessar os dados da pesquisa posteriormente:</label><br>
+            <input type="password" name="senha" id="senha" placeholder="Digite uma senha">
+        </form>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Matemática</legend>
+        <img src="img/imgMatematica.jpeg" alt="Imagem Matemática" style="height: 200px; margin-right: 30px;">
+        <img src="img/imgGitHub.png" alt="Imagem do GitHub" style="height: 200px;">
+    </fieldset>
+    <br>
+    <table border="2" width="70%"> <!--Eu coloquei as estilizações dos elementos da tabela na parte de <Style> do head-->
+        <thead>
+            <tr>
+                <td>Coluna 1</td>
+                <td>Coluna 2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>linha 1, coluna 1</td>
+                <td>linha 1, coluna 2</td>
+            </tr>
+            <tr>
+                <td>linha 2, coluna 1</td>
+                <td>linha 2, coluna 2</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <a href="https://google.com" target="_blanc"><img src="img/imgGoogle.jpg" alt="Imagem do Google" width="100px"></a>
+</body>
+</html>
