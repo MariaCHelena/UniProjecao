@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fibonacci</title>
+
+        <style>
+            a{
+                background-color: brown;
+                color: white;
+                padding: 5px 15px;
+                border-radius: 10px;
+                display: inline-block;
+            }
+            
+            a:hover{
+                cursor: pointer;
+            }
+
+            input{
+                font-size: 20px;
+                height: 40px;
+                width: 120px;
+                text-align: center;
+            }
+
+            input[type=number]::-webkit-inner-spin-button { 
+                -webkit-appearance: none;
+    
+            }
+            
+            input[type=number] { 
+                -moz-appearance: textfield;
+                appearance: textfield;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>SEQUÊNCIA DE FIBONACCI</h1>
+        <span>Calcule qual é o próximo número da sequência de Fibonacci até sua vigézima posição</span><br><br>
+        <input type="number" name="texto" id="numUs"><br><br>
+        <a id="botao">Butam</a>
+
+        <table border="2">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+        </table>
+        <script>
+            const Fibonacci = [0, 1]
+            var cont = 0;
+            var btn = document.getElementById('botao')
+            btn.addEventListener('click', () => {
+                let res = document.getElementById('numUs').value
+                console.log(res)
+                console.log('a')
+
+                for (let i = 2; i <= 20; i++) {
+                Fibonacci[i] = Fibonacci[i-1] + Fibonacci[i-2]
+                }
+
+                i = 2;
+                if (res = Fibonacci[i]){
+                    console.log('Acertou!')
+                    i++
+                } else {
+                    console.log('Errou!')
+                    i += 20
+                }
+            })
+
+            
+        </script>
+    </body>
+</html>
