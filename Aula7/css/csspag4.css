@@ -1,0 +1,7 @@
+.um * i{
+    color: red;
+}
+
+.dois * * i{
+    color: blue;
+}
