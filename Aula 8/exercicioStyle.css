@@ -1,0 +1,145 @@
+:root{
+    --vermelho: #bc0206;
+    --verde: #0d9358;
+    --amarelo: #e2b737;
+    --vermelho-escuro: #6f0306;
+    --preto: #121111;
+}
+
+a{
+    color: white;
+}
+
+html {
+    font-family: Tahoma, sans-serif;
+}
+
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pre-cabecalho{
+    height: 35px;
+    background-color: var(--amarelo);
+    color: var(--verde);
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.pre-cabecalho > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pre-cabecalho img{
+    height: 35px;
+}
+
+.pre-cabecalho a{
+    padding: 5px 10px;
+    background: var(--verde);
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.pre-cabecalho_strong{
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.cabecalho-principal{
+    height: 30vh;
+    background-color: var(--vermelho);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cabecalho-baixo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho-topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecalho-links ul{
+    display: flex;
+}
+
+.cabecalho-links ul li{
+    padding: 0 8px;
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho-principal img {
+    height: 40px;
+}
+
+.barra-de-pesquisa{
+    display: flex;
+    margin: 0 3%;
+}
+
+.buscar-texto_botao{
+    display: inline-block;
+    line-height: 56px;
+    text-align: center;
+    height: 56px;
+    width: 100px;
+    background-color: var(--vermelho-escuro);
+    color: white;
+    font-weight: 600;
+}
+
+.buscar-texto_botao:hover{
+    cursor: pointer;
+}
+
+.pesquisar-texto_input{
+    height: 50px;
+    font-size: 25px;
+    width: 32vw;
+    padding: 0 18px;
+}
+
+.link-carrinho{
+    display: flex;
+    align-items: center;
+}
+
+.pos-cabecalho{
+    background-color: var(--preto);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pos-cabecalho_ul{
+    display: flex;
+}
+
+.pos-cabecalho_links{
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 0 15px;
+}
+
+.pos-cabecalho_links-exp{
+    font-weight: bolder;
+}
+
+.a-exp1{ color: var(--vermelho); }
+.a-exp2{ color: var(--amarelo); }
+
+.carrossel-img{
+    width: 100%;
+}
