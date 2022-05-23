@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#portifolio">PORTIFOLIO</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div>
+            <p>Dê foco a cada um dos textos a seguir clicando sobre os textos ou clicando</p>
+            <p>Alguns navegadores, por padrão, colocam uma borda em elementos que</p>
+    
+            <h3 tabindex="1">Título com fundo cinza</h3>
+            <p tabindex="2">Parágrafo com outline</p>
+            <ul>
+                <li tabindex="3">Item 1 - cor verde</li>
+                <li tabindex="4">Item 2 - aumenta tamanho de fonte</li>
+                <li tabindex="5">Item 3 - sublinhado</li>
+            </ul>
+            <input type="text" tabindex="6">
+            <h2 id="home">HOME</h2>
+    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, sunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, expedita.</p>
+            <p>Página muito legal com várias coisas</p>
+            <p>Tem vários textos e tals, tem css pra deixar bem bonito</p>
+            <p>E tem tabindex, também. Aperta tab pa ver</p>
+    
+            <h2 id="portifolio">PORTIFÓLIO</h2>
+            <p>Meu portifólio bem bunito, com as coisas que eu fiz :D</p>
+            <p>Não fiz muitas coisas porque né</p>
+            <p><small>sou preguiçosa</small></p>
+            <p>Ahem</p>
+            <p>Prossiga</p>
+    
+            <h3 id="contato">CONTATO</h3>
+            <p>Chegamos aos contatos</p>
+            <p>Certamente a parte que você mais esperava >:3</p>
+            <p>C-certo, vou colocar o meu contato... >///////<</p>
+            <p>S-seja gentil, okay? >.></p>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blanc" onclick="display()">Meu contato OwO</a></p>
+        </div>
+        <div>
+            <img src="img/megamente.jpg" alt="" id="imagem">
+        </div>
+    </section>
+    <script>
+        function display(){
+            var imagem = window.document.getElementById('imagem')
+            imagem.style.display = 'block'
+        }
+    </script>
+</body>
+</html>

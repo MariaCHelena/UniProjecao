@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section{
+    display: flex;
+    align-items: center;
+}
+
+h3:focus{
+    background: #ccc;
+}
+
+p:focus{
+    outline: 2px dotted blue;
+}
+
+li:nth-child(1):focus{
+    color: green;
+}
+
+li:nth-child(2):focus{
+    font-size: 150%;
+}
+
+li:nth-child(3):focus{
+    text-decoration: underline;
+}
+
+input:focus{
+    background: yellow;
+    border: 1px solid black;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+div {
+    width: 400px;
+    margin-left: 130px;
+    text-align: justify;
+}
+
+#home:target{
+    color: white;
+    background: black;
+}
+
+#portifolio:target{
+    color: green;
+    border: 1px solid black;
+}
+
+#contato:target{
+    text-shadow: 1px 1px 2px orange;
+}
+
+section div img{
+    height: 400px;
+    display: none;
+}
