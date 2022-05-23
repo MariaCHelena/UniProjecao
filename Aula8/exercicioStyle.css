@@ -51,10 +51,12 @@ html {
 
 .cabecalho-links_logar{
     color: white;
+    font-size: 13px;
 }
 
 .cabecalho-links_logar > a{
     color: var(--amarelo);
+    font-size: 13px;
 }
 
 .pre-cabecalho_strong{
@@ -86,8 +88,9 @@ html {
     display: flex;
 }
 
-.cabecalho-links ul li{
-    padding: 0 8px;
+.itens-cabecalho-topo_li{
+    padding: 0 15px;
+    font-size: 13px;
     border-left: 2px solid rgba(0, 0, 0, 0.2);
 }
 
